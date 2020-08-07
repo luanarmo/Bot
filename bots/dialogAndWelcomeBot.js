@@ -4,7 +4,7 @@
 const { CardFactory } = require('botbuilder');
 const { DialogBot } = require('./dialogBot');
 const WelcomeCard = require('./resources/welcomeCard.json');
-
+const CustomCard = require('./resources/customCard.json');
 class DialogAndWelcomeBot extends DialogBot {
     constructor(conversationState, userState, dialog) {
         super(conversationState, userState, dialog);
@@ -13,7 +13,7 @@ class DialogAndWelcomeBot extends DialogBot {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    const welcomeCard = CardFactory.adaptiveCard(WelcomeCard);
+                    const welcomeCard = CardFactory.adaptiveCard(CustomCard);
                     await context.sendActivity({ attachments: [welcomeCard] });
                     await dialog.run(context, conversationState.createProperty('DialogState'));
                 }
