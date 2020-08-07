@@ -1,0 +1,46 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+      {
+        "type": "Image",
+        "url": "https://avatars1.githubusercontent.com/u/36710715?s=400&u=dddbbec74b142b90f8ebb5f9730a7cd7af43f927&v=4",
+        "size": "stretch"
+      },
+      {
+        "type": "TextBlock",
+        "spacing": "medium",
+        "size": "default",
+        "weight": "bolder",
+        "text": "Bienvenido al bot personal!!!",
+        "wrap": true,
+        "maxLines": 0
+      },
+      {
+        "type": "TextBlock",
+        "size": "default",
+        "isSubtle": true,
+        "text": "Esto es una prueba",
+        "wrap": true,
+        "maxLines": 0
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.OpenUrl",
+        "title": "Get an overview",
+        "url": "https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0"
+      },
+      {
+        "type": "Action.OpenUrl",
+        "title": "Ask a question",
+        "url": "https://stackoverflow.com/questions/tagged/botframework"
+      },
+      {
+        "type": "Action.OpenUrl",
+        "title": "Learn how to deploy",
+        "url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0"
+      }
+    ]
+  }
